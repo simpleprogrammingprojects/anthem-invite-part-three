@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript" src="invitation.js"></script>
+  <style type="text/css">
+    .main-background {
+      background-image: url("background.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    }
+    .card-background {
+      background-color: white;
+      width: 600px;
+      border-color: gray;
+      border-width: 2px;
+      border-style: solid;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      padding: 20px;
+    }
+    .banner-image {
+      width: 500px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .main-title {
+      text-align: center;
+      color: #f15c37;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 28pt;
+    }
+    .title {
+      text-align: center;
+      color: #656565;
+      font-family: sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 18pt;
+    }
+    .subtitle {
+      text-align: center;
+      color: #656565;
+      font-family: sans-serif;
+      font-weight: lighter;
+      font-size: 15pt;
+      margin-bottom: 30px;
+    }
+    .rsvp-form {
+      text-align: center;
+      margin-top: 70px;
+    }
+    .footer-image {
+      width: 400px;
+      margin-top: 20px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .button {
+      width: 400px;
+      height: 50px;
+      border-radius: 8px;
+      border-width: 0px;
+      color: #ffffff;
+      background-color: #f15c37;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 18pt;
+    }
+    .input-field {
+      width: 350px;
+      text-align: center;
+      border: none;
+      border-bottom: 1px solid #656565;
+      outline: none;
+      color: #656565;
+      font-family: sans-serif;
+      font-weight: lighter;
+      font-size: 15pt;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body class="main-background">
+  <div class="card-background">
+    <img src="banner.png" class="banner-image" onclick="showGreeting()">
+    <h1 class="main-title">Launch Party</h1>
+    <h2 class="title">When</h2>
+    <p class="subtitle">Friday, February 23, 2019</p>
+    <h2 class="title">Where</h2>
+    <p class="subtitle">Online</p>
+    <form class="rsvp-form" name="form" action="invite_accepted.html" onsubmit="return checkName()">
+      <input type="text" name="name" placeholder="Enter Name" class="input-field">
+      <br>
+      <input type="submit" name="RSVP" class="button">
+    </form>
+    <img src="footer.png" class="footer-image">
+  </div>
+</body>
+</html>
